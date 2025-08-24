@@ -1,0 +1,105 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 360px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card h1 {
+  margin-bottom: 1.5rem;
+  color: #f5b453;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.form-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* Inputs & Selects */
+input,
+select {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #646cff;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #646cff;
+  color: white;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: #535bf2;
+  transform: translateY(-2px);
+}
+
+/* Feedback */
+#feedback {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #f5b453;
+  transition: 0.9s ease;
+}
+
+.approved {
+  font-weight: bold;
+  color: #53f57c;
+}
+
+.denied {
+  font-weight: bold;
+  color: #ff4444;
+}
